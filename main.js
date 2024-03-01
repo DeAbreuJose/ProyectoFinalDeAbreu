@@ -109,7 +109,7 @@ searchBtn.addEventListener("click", ()=>{
 })
 
 
-if (window.location.pathname === '../html/work.html') {
+if (window.location.pathname.includes('work.html')) {
  
   document.addEventListener('DOMContentLoaded', function() {
     Swal.fire({
