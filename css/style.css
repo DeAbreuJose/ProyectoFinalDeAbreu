@@ -136,41 +136,114 @@ p {
 }
 /*---------------------------WORK HTML-------------------------------*/
 .workSectionWrapper {
-  padding: 80px 20px 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.form-group {
+.formWrapper {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
   margin-bottom: 20px;
 }
-.form-group label {
+
+.formWrapper h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  color: #555;
 }
-.form-group input {
+
+input[type="text"],
+input[type="number"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
-.formWrapper {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.formButton {
-  background-color: #0F0E0E;
+button {
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.weather h2.temp {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.weather h3.city {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details .col {
+  flex: 1;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.search {
+  display: flex;
+}
+
+.search input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
 
 /*---------------------------------Services-----------------------------------*/
 .servicesCardWrapper {
